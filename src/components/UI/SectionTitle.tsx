@@ -28,7 +28,7 @@ export function SectionTitle({ title, subtitle, align = 'left' }: SectionTitlePr
                 />
             </div>
             {subtitle && (
-                <p className="text-slate-400 text-lg mt-4 max-w-2xl">
+                <p className={`text-slate-400 text-lg mt-4 max-w-2xl ${align === 'center' ? 'mx-auto text-center' : ''}`}>
                     {subtitle}
                 </p>
             )}
