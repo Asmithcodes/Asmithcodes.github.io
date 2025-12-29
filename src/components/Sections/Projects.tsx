@@ -28,7 +28,7 @@ function ProjectCard({ project, index, isFeatured = false }: { project: Project;
                 <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-orange-500/20 rounded-full blur-3xl" />
 
                 {/* Header */}
-                <div className="mb-6 relative z-10">
+                <div className="mb-6 relative z-10 pt-8">
                     <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-400 border border-amber-500/30">
                         {project.type}
                     </span>
