@@ -132,6 +132,14 @@ export const skills = {
 
 export const experiences = [
     {
+        id: "hal",
+        role: "Engineering Intern",
+        company: "Hindustan Aeronautics Limited (HAL)",
+        location: "Hyderabad",
+        description: "Developed a Python-based simulation to model and validate data-link establishment logic between two distributed systems. Focused on analyzing system behavior, state transitions, and reliability within a controlled simulation environment.",
+        highlights: ["Python simulation", "System behavior modeling", "Logic validation", "Reliability testing"]
+    },
+    {
         id: "edutech",
         role: "IoT and Robotics Intern",
         company: "EduTech Innovations",
