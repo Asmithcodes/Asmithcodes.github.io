@@ -1,5 +1,5 @@
 import { motion, type HTMLMotionProps } from 'framer-motion';
-import type { ElementType, ReactNode, AnchorHTMLAttributes } from 'react';
+import type { ElementType, ReactNode } from 'react';
 
 interface BaseButtonProps {
     children: ReactNode;
