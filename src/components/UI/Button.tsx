@@ -1,14 +1,25 @@
-import { motion } from 'framer-motion';
-import type { ButtonHTMLAttributes, ElementType } from 'react';
+import { motion, type HTMLMotionProps } from 'framer-motion';
+import type { ElementType, ReactNode, AnchorHTMLAttributes } from 'react';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode;
+interface BaseButtonProps {
+    children: ReactNode;
     variant?: 'primary' | 'secondary';
     icon?: ElementType;
     iconPosition?: 'left' | 'right';
-    href?: string;
+}
+
+interface LinkButtonProps extends BaseButtonProps {
+    href: string;
     external?: boolean;
 }
+
+interface RegularButtonProps extends BaseButtonProps {
+    href?: never;
+    external?: never;
+}
+
+type ButtonProps = (LinkButtonProps | RegularButtonProps) &
+    Omit<HTMLMotionProps<'button'>, keyof BaseButtonProps>;
 
 export function Button({
     children,
@@ -50,6 +61,11 @@ export function Button({
         </>
     );
 
+    const motionProps = {
+        whileHover: { scale: 1.02 },
+        whileTap: { scale: 0.98 }
+    };
+
     if (href) {
         return (
             <motion.a
@@ -57,8 +73,7 @@ export function Button({
                 target={external ? '_blank' : undefined}
                 rel={external ? 'noopener noreferrer' : undefined}
                 className={`${baseStyles} ${variants[variant]} ${className}`}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                {...motionProps}
             >
                 {content}
             </motion.a>
@@ -68,8 +83,7 @@ export function Button({
     return (
         <motion.button
             className={`${baseStyles} ${variants[variant]} ${className}`}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            {...motionProps}
             {...props}
         >
             {content}
