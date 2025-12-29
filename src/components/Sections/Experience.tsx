@@ -49,10 +49,16 @@ export function Experience() {
                                     </div>
                                 </div>
 
-                                {/* Right side - Location */}
-                                <div className="flex items-center gap-1 text-slate-500 text-sm">
-                                    <MapPin size={14} />
-                                    <span>{exp.location}</span>
+                                {/* Right side - Duration and Location */}
+                                <div className="flex flex-col gap-2 text-sm">
+                                    <div className="flex items-center gap-1 text-amber-500">
+                                        <Briefcase size={14} />
+                                        <span className="font-medium">{exp.duration}</span>
+                                    </div>
+                                    <div className="flex items-center gap-1 text-slate-500">
+                                        <MapPin size={14} />
+                                        <span>{exp.location}</span>
+                                    </div>
                                 </div>
                             </div>
                         </Card>

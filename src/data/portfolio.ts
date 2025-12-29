@@ -136,6 +136,7 @@ export const experiences = [
         role: "Engineering Intern",
         company: "Hindustan Aeronautics Limited (HAL)",
         location: "Hyderabad",
+        duration: "3 months",
         description: "Developed a Python-based simulation to model and validate data-link establishment logic between two distributed systems. Focused on analyzing system behavior, state transitions, and reliability within a controlled simulation environment.",
         highlights: ["Python simulation", "System behavior modeling", "Logic validation", "Reliability testing"]
     },
@@ -144,6 +145,7 @@ export const experiences = [
         role: "IoT and Robotics Intern",
         company: "EduTech Innovations",
         location: "Hyderabad",
+        duration: "2 months",
         description: "Worked on rapid prototyping of IoT systems and embedded projects. Gained hands-on experience with sensor integration, microcontroller programming, and system-level experimentation.",
         highlights: ["Rapid prototyping", "ESP32 development", "IoT systems", "Embedded programming"]
     },
@@ -152,6 +154,7 @@ export const experiences = [
         role: "Intern",
         company: "Accord Power Digital Products",
         location: "Hyderabad",
+        duration: "1 month",
         description: "Gained exposure to electronics manufacturing processes, PCB design fundamentals, and industrial systems. Developed understanding of production-grade electronics development.",
         highlights: ["Electronics manufacturing", "PCB design", "Industrial systems"]
     }
