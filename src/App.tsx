@@ -14,12 +14,27 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Asmith Pampana | Portfolio</title>
+        <title>Asmith Pampana | Creative Technologist & Full-Stack Developer</title>
         <meta
           name="description"
-          content="Portfolio of Asmith Pampana - Software-focused ECE student building functional web applications and system prototypes."
+          content="Portfolio of Asmith Pampana - Creative Technologist and Full-Stack Developer specializing in building innovative web applications, interactive experiences, and system prototypes with modern technologies."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://asmithcodes.github.io/" />
+        <meta property="og:title" content="Asmith Pampana | Creative Technologist & Full-Stack Developer" />
+        <meta property="og:description" content="Portfolio of Asmith Pampana - Creative Technologist and Full-Stack Developer specializing in building innovative web applications and interactive experiences." />
+        <meta property="og:image" content="https://asmithcodes.github.io/AsmithPhoto.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://asmithcodes.github.io/" />
+        <meta property="twitter:title" content="Asmith Pampana | Creative Technologist & Full-Stack Developer" />
+        <meta property="twitter:description" content="Portfolio of Asmith Pampana - Creative Technologist and Full-Stack Developer specializing in building innovative web applications and interactive experiences." />
+        <meta property="twitter:image" content="https://asmithcodes.github.io/AsmithPhoto.png" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Helmet>

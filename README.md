@@ -35,6 +35,45 @@ The portfolio emphasizes:
 - **Accessibility-first** — Respects user preferences including reduced motion settings
 - **Performance** — Optimized for fast load times and smooth rendering
 
+## SEO & Search Console
+
+This portfolio is optimized for search engines and integrated with Google Search Console for performance tracking.
+
+### Verification Status
+✅ **Google Search Console Verified**  
+- Property Type: URL Prefix
+- Target URL: `https://asmithcodes.github.io/`
+- Verification Method: HTML meta tag
+
+### Sitemap
+The sitemap is automatically generated during the build process and is available at:
+- **URL:** `https://asmithcodes.github.io/sitemap.xml`
+- **Submission:** Submitted to Google Search Console for indexing
+
+### SEO Features
+- ✅ Comprehensive meta tags (title, description, keywords)
+- ✅ Open Graph tags for social media sharing
+- ✅ Twitter Card tags for enhanced Twitter previews
+- ✅ Canonical URL to prevent duplicate content
+- ✅ Semantic HTML structure (header, main, section, footer)
+- ✅ Mobile-friendly and responsive design
+- ✅ Fast load times with optimized assets
+- ✅ robots.txt allowing all search engine crawlers
+
+### Indexing
+To request indexing of new content:
+1. Go to [Google Search Console](https://search.google.com/search-console)
+2. Select the property: `https://asmithcodes.github.io/`
+3. Use "URL Inspection" tool
+4. Enter the URL to index
+5. Click "Request Indexing"
+
+### Performance Monitoring
+Monitor search performance in Google Search Console:
+- **Performance Tab:** View impressions, clicks, CTR, and average position
+- **Coverage Tab:** Check indexed pages and identify crawl errors
+- **Enhancements Tab:** Review mobile usability and Core Web Vitals
+
 ## Contact
 
 **Asmith Pampana**  
