@@ -62,7 +62,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/Asmithcodes/AetherWay-Travel-Planning",
         demoUrl: "https://asmithcodes.github.io/AetherWay-Travel-Planning/",
         isPrimary: true,
-        isFeatured: true
+        // isFeatured: true
     },
     {
         id: "qr-generator",
