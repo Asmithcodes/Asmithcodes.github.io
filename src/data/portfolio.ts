@@ -86,6 +86,16 @@ export const projects: Project[] = [
     },
     // Secondary Projects - Systems & Embedded
     {
+        id: "wireless-headtracking",
+        title: "Wireless Head Tracking System",
+        type: "Embedded Systems Project",
+        description: "An ESP32-based wireless head tracking system featuring dual IMU sensor fusion (MPU6500 + MPU6050) for precise yaw and pitch tracking. Uses ESP-NOW protocol for low-latency communication (~100ms at 10Hz) between a wearable transmitter unit and servo-controlled receiver. Designed for VR/AR applications, camera gimbals, and interactive robotics with automatic gyroscope calibration, signal filtering, and real-time data validation.",
+        focusAreas: ["ESP32 development", "Sensor fusion", "Wireless protocols", "Real-time systems", "Hardware-software integration"],
+        githubUrl: "https://github.com/Asmithcodes/Wireless-Headtracking-System",
+        isPrimary: false,
+        isFeatured: true
+    },
+    {
         id: "iot-prototypes",
         title: "IoT & Embedded Prototypes",
         type: "Internship Work · EduTech Innovations",
