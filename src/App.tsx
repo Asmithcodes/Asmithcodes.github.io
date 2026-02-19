@@ -18,7 +18,7 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Asmith Pampana | Creative Technologist & Full-Stack Developer</title>
+        <title>Asmith Pampana | Portfolio</title>
         <meta
           name="description"
           content="Portfolio of Asmith Pampana - Creative Technologist and Full-Stack Developer specializing in building innovative web applications, interactive experiences, and system prototypes with modern technologies."
