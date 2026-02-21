@@ -48,8 +48,8 @@ export const projects: Project[] = [
         type: "Functional Web Application",
         description: "Lumina is an AI-powered decision-clarity tool designed to help users think more honestly about complex personal dilemmas. By guiding users through a small set of deliberately challenging questions, Lumina surfaces hidden assumptions, emotional blind spots, and avoided trade-offs, then delivers direct, actionable insights focused on what matters most and what to do next.",
         focusAreas: ["User-focused design", "Practical problem solving", "Accessible UI", "JavaScript logic"],
-        githubUrl: "https://github.com/Asmithcodes/Lumina--The-Decision-Clarity-Engine",
-        demoUrl: "https://asmithcodes.github.io/Lumina--The-Decision-Clarity-Engine/",
+        githubUrl: "https://github.com/Asmithcodes/Lumina-The-Decision-Engine",
+        demoUrl: "https://asmithcodes.github.io/Lumina-The-Decision-Engine/",
         isPrimary: true,
         isFeatured: true
     },
