@@ -7,6 +7,7 @@ interface CardProps {
     className?: string;
     hover?: boolean;
     glow?: boolean;
+    featured?: boolean;
     animateFrom?: 'left' | 'right' | 'bottom';
 }
 
@@ -15,6 +16,7 @@ export function Card({
     className = '',
     hover = true,
     glow = false,
+    featured = false,
     animateFrom = 'bottom'
 }: CardProps) {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -58,8 +60,9 @@ export function Card({
             className={`
         relative overflow-hidden rounded-xl
         bg-white/5 backdrop-blur-md
-        border border-white/10
-        ${hover ? 'hover:border-white/20' : ''}
+        ${featured ? 'border border-amber-500/40' : 'border border-white/10'}
+        ${hover && !featured ? 'hover:border-white/20' : ''}
+        ${hover && featured ? 'hover:border-amber-500/60' : ''}
         ${glow ? 'hover:shadow-lg hover:shadow-amber-500/10' : ''}
         transition-all duration-300
         ${className}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, FolderOpen } from 'lucide-react';
 import { Button } from '../UI/Button';
+import { GradientText } from '../UI/GradientText';
 import { personalInfo } from '../../data/portfolio';
 import { useTypingEffect } from '../../hooks/useTypingEffect';
 
@@ -38,7 +39,9 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                        <span>{displayedText}</span>
+                        <GradientText animationSpeed={4.5} colors={['#fe9d00', '#ffffff', '#1c2739']}>
+                            {displayedText}
+                        </GradientText>
                         {!isComplete && (
                             <span className="inline-block w-1 h-12 md:h-20 bg-amber-500 animate-pulse"></span>
                         )}

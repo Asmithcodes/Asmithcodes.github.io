@@ -15,6 +15,7 @@ function ProjectCard({ project, index, isFeatured = false }: { project: Project;
             <Card
                 className="p-8 h-full flex flex-col relative overflow-hidden"
                 glow={true}
+                featured={true}
                 animateFrom="left"
             >
                 {/* Featured badge with enhanced styling */}
