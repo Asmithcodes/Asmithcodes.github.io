@@ -54,6 +54,17 @@ export const projects: Project[] = [
         isFeatured: true
     },
     {
+        id: "transmit-via-sound",
+        title: "Acoustic Data Link",
+        type: "Functional Web Application",
+        description: "A browser-based acoustic data link for air-gapped, peer-to-peer communication — no Wi-Fi, Bluetooth, or cellular required. Encodes text and files into 8-FSK audio signals using the Web Audio API, transmitted over a device's speaker and decoded by a nearby microphone. Features a custom FSK protocol with look-ahead scheduling, SNR-based handshake detection, CRC32 data integrity verification, and a distinctive vintage signal-intelligence UI.",
+        focusAreas: ["Web Audio API", "DSP / FSK modulation", "React + Vite", "Real-time signal processing", "Protocol design"],
+        githubUrl: "https://github.com/Asmithcodes/Transmit-via-Sound",
+        demoUrl: "https://asmithcodes.github.io/Transmit-via-Sound/",
+        isPrimary: true,
+        isFeatured: true
+    },
+    {
         id: "aetherway",
         title: "AetherWay",
         type: "Travel Planning Application",
