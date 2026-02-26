@@ -16,10 +16,10 @@ interface GradientTextProps {
 export function GradientText({
     children,
     className = '',
-    colors=['#f59e0b', '#fbbf24', '#ffffff', '#fbbf24', '#f59e0b'],
+    colors = ['#f59e0b', '#fbbf24', '#ffffff'],
     animationSpeed = 6,
     showBorder = false,
-    direction = 'horizontal',
+    direction = 'vertical',
     pauseOnHover = false,
     yoyo = false,
 }: GradientTextProps) {

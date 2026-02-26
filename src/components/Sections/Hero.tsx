@@ -39,7 +39,7 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                        <GradientText animationSpeed={4.5} colors={['#fe9d00', '#ffffff', '#1c2739']}>
+                        <GradientText animationSpeed={4.5}>
                             {displayedText}
                         </GradientText>
                         {!isComplete && (
