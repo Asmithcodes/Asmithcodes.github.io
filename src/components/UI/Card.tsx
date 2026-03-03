@@ -58,15 +58,15 @@ export function Card({
     return (
         <motion.div
             className={`
-        relative overflow-hidden rounded-xl
-        bg-white/5 backdrop-blur-md
-        ${featured ? 'border border-amber-500/40' : 'border border-white/10'}
-        ${hover && !featured ? 'hover:border-white/20' : ''}
-        ${hover && featured ? 'hover:border-amber-500/60' : ''}
-        ${glow ? 'hover:shadow-lg hover:shadow-amber-500/10' : ''}
-        transition-all duration-300
-        ${className}
-      `}
+                relative overflow-hidden rounded-xl
+                bg-white/5 backdrop-blur-md
+                ${featured ? 'border border-amber-500/40' : 'border border-white/10'}
+                ${hover && !featured ? 'hover:border-white/20' : ''}
+                ${hover && featured ? 'hover:border-amber-500/60' : ''}
+                ${glow ? 'hover:shadow-lg hover:shadow-amber-500/10' : ''}
+                transition-all duration-300
+                ${className}
+            `}
             onMouseMove={handleMouseMove}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

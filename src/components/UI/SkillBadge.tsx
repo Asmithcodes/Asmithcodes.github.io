@@ -14,11 +14,11 @@ export function SkillBadge({ skill, variant = 'primary' }: SkillBadgeProps) {
     return (
         <motion.span
             className={`
-        inline-block px-4 py-2 rounded-lg
-        text-sm font-medium
-        border backdrop-blur-sm
-        ${variants[variant]}
-      `}
+                inline-block px-4 py-2 rounded-lg
+                text-sm font-medium
+                border backdrop-blur-sm
+                ${variants[variant]}
+            `}
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 400 }}
         >
