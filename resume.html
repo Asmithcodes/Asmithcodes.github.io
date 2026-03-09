@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmith Pampana - Resume</title>
+    <style>
+        /* ATS-Friendly Minimal Base Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            margin: 0;
+            padding: 28px 36px;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20pt;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            margin-top: 5px;
+            font-size: 10pt;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 13pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin-bottom: 6px;
+            margin-top: 10px;
+        }
+
+        .item {
+            margin-bottom: 8px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .item-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+
+        p,
+        ul {
+            margin: 5px 0;
+            font-size: 10.5pt;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            text-align: justify;
+        }
+
+        /* Skills Grid - Simplified for ATS */
+        .skills-container {
+            font-size: 10.5pt;
+        }
+
+        .skills-row {
+            margin-bottom: 2px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            @page {
+                size: A4;
+                margin: 12mm 15mm;
+            }
+        }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 8px 16px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="print-btn no-print" onclick="window.print()">Print to PDF</button>
+
+    <div class="container">
+        <header>
+            <h1>Asmith Pampana</h1>
+            <div class="contact-info">
+                <strong>Location:</strong> Hyderabad, India |
+                <strong>Email:</strong> <a href="mailto:asmyth@duck.com">asmyth@duck.com</a> |
+                <strong>LinkedIn:</strong> <a
+                    href="https://linkedin.com/in/asmithpampana">linkedin.com/in/asmithpampana</a>
+                <strong>GitHub:</strong> <a href="https://github.com/Asmithcodes">github.com/Asmithcodes</a> |
+                <strong>Portfolio:</strong> <a href="https://asmithcodes.github.io/">asmithcodes.github.io</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Final-year ECE student specializing in embedded systems, IoT, and full-stack development with AI integration | Designs end-to-end hardware-software solutions spanning microcontrollers, signal processing, and React-based web applications | Seeking embedded systems, IoT, or full-stack engineering roles bridging hardware and software.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-row"><strong>Languages:</strong> Python, C/C++, Java, SQL, JavaScript, TypeScript, HTML, CSS</div>
+                <div class="skills-row"><strong>Frameworks &amp; Libraries:</strong> React, Node.js, Web Audio API</div>
+                <div class="skills-row"><strong>Hardware &amp; Embedded:</strong> Embedded Systems, Microcontrollers (ESP32, Arduino), IoT, Hardware-Software Integration, PCB Design Fundamentals</div>
+                <div class="skills-row"><strong>Tools &amp; Platforms:</strong> Git, GitHub, Vite, DSP, Cloudflare Workers, n8n</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Lumina - AI Decision-Clarity Engine | Google Gemini, React</span>
+                    <span><a href="https://github.com/Asmithcodes/Lumina-The-Decision-Engine">Github</a></span>
+                </div>
+                <ul>
+                    <li>Engineered an AI-powered decision analysis tool using Google Gemini API, delivering structured 5-step clarity reports per query in under 2 seconds.</li>
+                    <li>Designed intelligent questioning algorithms to surface hidden assumptions and emotional blind spots, improving decision quality for ambiguous problem scenarios.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>AetherWay - Travel Planning | Full-Stack, API Integration</span>
+                    <span><a href="https://github.com/Asmithcodes/AetherWay-Travel-Planning">Github</a></span>
+                </div>
+                <ul>
+                    <li>Built a full-stack travel planning platform aggregating real-time pricing and routes across 3+ transport modes via AI-powered search integration.</li>
+                    <li>Optimized multi-modal route comparison logic, consolidating data from multiple APIs to surface ranked travel options in a single interface.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Acoustic Data Link | Web Audio API, DSP, React</span>
+                    <span><a href="https://github.com/Asmithcodes/Transmit-via-Sound">Github</a></span>
+                </div>
+                <ul>
+                    <li>Implemented a browser-based 8-FSK acoustic data link encoding 3 bits per symbol, achieving reliable air-gapped peer-to-peer data transfer without network infrastructure.</li>
+                    <li>Designed SNR-based handshake detection and CRC32 integrity verification, reducing transmission error rates to under 1% at operational noise thresholds.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>AI Music Discovery | API Integration, Interactive UI</span>
+                    <span><a href="https://github.com/Asmithcodes/AI-Music-Discovery">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Developed an interactive web application generating personalized song recommendations based on user mood, activity, and region.</li>
+                    <li>Integrated real-time Spotify API verification to eliminate hallucinated tracks, ensuring 100% of recommended songs are valid and playable.</li>
+                </ul>
+            </div>
+
+        </section>
+        <br><br>
+        <section>
+            <h2>Work Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Hindustan Aeronautics Limited (HAL)</span>
+                    <span>Hyderabad</span>
+                </div>
+                <div class="item-sub">
+                    <span>Engineering Intern</span>
+                    <span>Aug 2025 - Nov 2025</span>
+                </div>
+                <ul>
+                    <li>Developed a Python-based simulation to model and validate data-link establishment logic between
+                        distributed systems.</li>
+                    <li>Mapped state transitions and failure modes across multi-node communication scenarios, improving simulation coverage and reliability analysis.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>EduTech Innovations</span>
+                    <span>Hyderabad</span>
+                </div>
+                <div class="item-sub">
+                    <span>IoT and Robotics Intern</span>
+                    <span>Mar 2025 - Apr 2025</span>
+                </div>
+                <ul>
+                    <li>Prototyped IoT systems using ESP32, integrating multiple sensors and actuators to accelerate embedded hardware build-test cycles.</li>
+                    <li>Programmed ESP32 microcontrollers in C/C++ for real-time sensor acquisition and motor control across robotics experiments.</li>
+                    <li>Built surveillance robots using ESP32-CAM and human-following systems leveraging ultrasonic and IR sensor arrays.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Accord Power Digital Products</span>
+                    <span>Hyderabad</span>
+                </div>
+                <div class="item-sub">
+                    <span>Intern</span>
+                    <span>Dec 2024 - Jan 2025</span>
+                </div>
+                <ul>
+                    <li>Documented PCB assembly and quality inspection workflows across surface-mount production lines, mapping end-to-end manufacturing processes.</li>
+                    <li>Analyzed industrial electronics architectures and component selection criteria to evaluate production-grade design and fault-tolerance standards.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Vidya Jyothi Institute of Technology</span>
+                    <span>Hyderabad, India</span>
+                </div>
+                <div class="item-sub">
+                    <span>B.Tech in Electronics and Communication Engineering (Final Year)</span>
+                    <span>2022 - 2026</span>
+                </div>
+                <p>CGPA: 8.95 / 10.0</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Sri Bhavishya Junior College</span>
+                    <span>Vijayawada, India</span>
+                </div>
+                <div class="item-sub">
+                    <span>Intermediate - MPC</span>
+                    <span>2020 - 2022</span>
+                </div>
+                <p>Percentage: 79.6%</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Dr. K. K. R's Gowtham School</span>
+                    <span>Visakhapatnam, India</span>
+                </div>
+                <div class="item-sub">
+                    <span>Secondary - SSC</span>
+                    <span>2020</span>
+                </div>
+                <p>CGPA: 10.0 / 10.0</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>English (Professional Proficiency)</li>
+                <li>Telugu (Native)</li>
+                <li>Hindi (Conversational)</li>
+            </ul>
+        </section>
+    </div>
+</body>
