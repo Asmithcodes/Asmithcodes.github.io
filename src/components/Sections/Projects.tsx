@@ -214,14 +214,24 @@ export function Projects() {
                         <span className="w-8 h-px bg-slate-500/50" />
                         Systems & Embedded (Foundational)
                     </h3>
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-2 gap-6 mb-10">
                         {secondaryProjects.map((project, index) => (
                             <ProjectCard key={project.id} project={project} index={index} />
                         ))}
                     </div>
-                    <p className="text-slate-500 text-sm mt-6 text-center italic">
-                        Selected internship projects shown. Additional prototypes and experiments are available on GitHub.
-                    </p>
+                    
+                    <div className="flex flex-col items-center justify-center border-t border-white/10 pt-10 mt-6">
+                        <p className="text-slate-400 text-base mb-6 text-center max-w-2xl">
+                            Interested to see more? View my complete portfolio of functional applications, embedded systems, prototypes, and experiments.
+                        </p>
+                        <a 
+                            href="#/all-projects" 
+                            className="group flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)]"
+                        >
+                            <span>View All Projects</span>
+                            <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                        </a>
+                    </div>
                 </motion.div>
             </div>
         </section>

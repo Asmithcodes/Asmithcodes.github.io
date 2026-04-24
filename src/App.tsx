@@ -1,4 +1,5 @@
 import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { useState, useEffect } from 'react';
 import { CircuitGridBackground } from './components/Background/CircuitGridBackground';
 import { Header } from './components/Layout/Header';
 import { Footer } from './components/Layout/Footer';
@@ -9,11 +10,46 @@ import { Skills } from './components/Sections/Skills';
 import { Experience } from './components/Sections/Experience';
 import { Education } from './components/Sections/Education';
 import { Contact } from './components/Sections/Contact';
+import { AllProjectsPage } from './components/Pages/AllProjectsPage';
 import SplashCursor from './components/UI/SplashCursor';
 import { useSplashCursor } from './hooks/useSplashCursor';
 
 function App() {
     const { isActive } = useSplashCursor();
+    const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
+
+    useEffect(() => {
+        const onHashChange = () => setCurrentPath(window.location.hash || '#/');
+        window.addEventListener('hashchange', onHashChange);
+        return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
+
+    // Ensure we snap to the top when navigating back to the main site from the projects page
+    useEffect(() => {
+        if (currentPath === '#/' || currentPath === '') {
+            // Temporarily disable smooth scrolling to snap instantly to top
+            document.documentElement.style.scrollBehavior = 'auto';
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+            
+            // Restore smooth scrolling behavior slightly after
+            const timeout = setTimeout(() => {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }, 50);
+            
+            return () => clearTimeout(timeout);
+        }
+    }, [currentPath]);
+
+    // If the path is all-projects, render only the All Projects Page (Background is shared across all)
+    if (currentPath === '#/all-projects') {
+        return (
+            <HelmetProvider>
+                {isActive && <SplashCursor />}
+                <CircuitGridBackground />
+                <AllProjectsPage />
+            </HelmetProvider>
+        );
+    }
 
     return (
         <HelmetProvider>
