@@ -82,7 +82,15 @@ function AllProjectCard({ project }: { project: ProjectItem }) {
     );
 }
 
-export function AllProjectsPage() {
+export function CategoryProjectsPage({ 
+    category, 
+    title, 
+    description 
+}: { 
+    category: 'software' | 'hardware';
+    title: string;
+    description: string;
+}) {
     useEffect(() => {
         // Temporarily disable smooth scrolling to snap instantly to top
         document.documentElement.style.scrollBehavior = 'auto';
@@ -94,17 +102,19 @@ export function AllProjectsPage() {
         }, 50);
         
         return () => clearTimeout(timeout);
-    }, []);
+    }, [category]); // Re-run if category changes
+
+    const filteredProjects = allProjects.filter(p => p.category === category);
 
     return (
         <div className="min-h-screen flex flex-col relative z-10 pt-20">
             <Helmet>
-                <title>All Projects | Asmith Pampana</title>
-                <meta name="description" content="A comprehensive list of all projects, prototypes, and experiments." />
+                <title>{title} | Asmith Pampana</title>
+                <meta name="description" content={description} />
             </Helmet>
 
             <div className="max-w-6xl mx-auto px-6 w-full flex-grow">
-                {/* Embedded Header/Nav specifically for the All Projects Page */}
+                {/* Embedded Header/Nav specifically for the Category Projects Page */}
                 <div className="mb-12 flex items-center justify-between border-b border-white/10 pb-6">
                     <a
                         href="#/"
@@ -120,13 +130,13 @@ export function AllProjectsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">All Projects</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{title}</h1>
                     <p className="text-slate-400 text-lg mb-12 max-w-2xl">
-                        A complete archive of my functional applications, embedded systems, prototypes, and experiments.
+                        {description}
                     </p>
 
                     <div className="flex flex-col gap-8 mb-16">
-                        {allProjects.map((project) => (
+                        {filteredProjects.map((project) => (
                             <AllProjectCard key={project.id} project={project} />
                         ))}
                     </div>
@@ -154,3 +164,24 @@ export function AllProjectsPage() {
         </div>
     );
 }
+
+export function SoftwareProjectsPage() {
+    return (
+        <CategoryProjectsPage 
+            category="software" 
+            title="Software Projects" 
+            description="A collection of my software applications, full-stack platforms, and web-based tools." 
+        />
+    );
+}
+
+export function HardwareProjectsPage() {
+    return (
+        <CategoryProjectsPage 
+            category="hardware" 
+            title="Hardware & Embedded Projects" 
+            description="An archive of my embedded systems, hardware prototypes, and low-level programming projects." 
+        />
+    );
+}
+

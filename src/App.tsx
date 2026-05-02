@@ -10,7 +10,7 @@ import { Skills } from './components/Sections/Skills';
 import { Experience } from './components/Sections/Experience';
 import { Education } from './components/Sections/Education';
 import { Contact } from './components/Sections/Contact';
-import { AllProjectsPage } from './components/Pages/AllProjectsPage';
+import { SoftwareProjectsPage, HardwareProjectsPage } from './components/Pages/CategoryProjectsPage';
 import SplashCursor from './components/UI/SplashCursor';
 import { useSplashCursor } from './hooks/useSplashCursor';
 
@@ -40,13 +40,24 @@ function App() {
         }
     }, [currentPath]);
 
-    // If the path is all-projects, render only the All Projects Page (Background is shared across all)
-    if (currentPath === '#/all-projects') {
+    // Route for Software Projects Page
+    if (currentPath === '#/software-projects') {
         return (
             <HelmetProvider>
                 {isActive && <SplashCursor />}
                 <CircuitGridBackground />
-                <AllProjectsPage />
+                <SoftwareProjectsPage />
+            </HelmetProvider>
+        );
+    }
+
+    // Route for Hardware Projects Page
+    if (currentPath === '#/hardware-projects') {
+        return (
+            <HelmetProvider>
+                {isActive && <SplashCursor />}
+                <CircuitGridBackground />
+                <HardwareProjectsPage />
             </HelmetProvider>
         );
     }

@@ -222,15 +222,24 @@ export function Projects() {
                     
                     <div className="flex flex-col items-center justify-center border-t border-white/10 pt-10 mt-6">
                         <p className="text-slate-400 text-base mb-6 text-center max-w-2xl">
-                            Interested to see more? View my complete portfolio of functional applications, embedded systems, prototypes, and experiments.
+                            Interested to see more? Explore my complete portfolio of projects separated by category.
                         </p>
-                        <a 
-                            href="#/all-projects" 
-                            className="group flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)]"
-                        >
-                            <span>View All Projects</span>
-                            <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                        </a>
+                        <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                            <a 
+                                href="#/software-projects" 
+                                className="group flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)]"
+                            >
+                                <span>Software Projects</span>
+                                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                            </a>
+                            <a 
+                                href="#/hardware-projects" 
+                                className="group flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl transition-all border border-slate-700 hover:border-slate-600 shadow-lg"
+                            >
+                                <span>Hardware & Embedded</span>
+                                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                            </a>
+                        </div>
                     </div>
                 </motion.div>
             </div>
