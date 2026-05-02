@@ -99,6 +99,78 @@ export const allProjects: ProjectItem[] = [
         category: "hardware"
     },
     {
+        id: "human-detection-water-spray",
+        title: "Human Detection & Water Spraying System",
+        description: "An Arduino Nano-based system that uses sequential IR sensor triggering to determine the direction of a person entering or exiting a doorway. Automatically controls a water mist generator via a relay or MOSFET upon entry detection.",
+        focusAreas: ["C++", "Arduino Nano", "IR Sensors", "Hardware Integration"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Human%20detection%20and%20water%20spraying%20system",
+        category: "hardware"
+    },
+    {
+        id: "auto-plant-watering-esp8266",
+        title: "Automatic Plant Watering System",
+        description: "An automated plant watering system using an ESP8266, digital moisture sensor, and water pump. It automatically activates the pump when the soil is dry and logs the status.",
+        focusAreas: ["C++", "ESP8266", "Moisture Sensor", "IoT"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Automatic%20plant%20watering%20system%20using%20ESP8266",
+        category: "hardware"
+    },
+    {
+        id: "blind-boots",
+        title: "Blind Boots (Ultrasonic Alert)",
+        description: "A wearable ultrasonic distance alert system built with an Arduino Nano and a buzzer to provide auditory feedback based on object proximity.",
+        focusAreas: ["C++", "Arduino Nano", "Ultrasonic Sensor", "Wearable"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Blind%20Boots",
+        category: "hardware"
+    },
+    {
+        id: "human-following-robot",
+        title: "Human Following Robot",
+        description: "An Arduino Uno-based mobile robot that follows a human by detecting presence using dual IR proximity sensors and navigating towards the target using an L293D motor driver.",
+        focusAreas: ["C++", "Arduino Uno", "Robotics", "Motor Control"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Human_Following_Robot",
+        category: "hardware"
+    },
+    {
+        id: "rfid-parking-system",
+        title: "Smart Vehicle Entry System",
+        description: "An Arduino Nano-based smart parking system that uses RFID for vehicle authentication, a servo-controlled gate barrier, an IR sensor for exit detection, and an I2C LCD for capacity tracking.",
+        focusAreas: ["C++", "Arduino Nano", "RFID", "Servo Motor"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/RFID%20Parking%20system%20using%20Arduino%20Nano",
+        category: "hardware"
+    },
+    {
+        id: "smoke-detection-system",
+        title: "ESP8266 Smoke Detector",
+        description: "A smoke detection system that uses an ESP8266 and a digital smoke sensor to activate a siren and LED alert upon detecting smoke, while providing serial monitor logging.",
+        focusAreas: ["C++", "ESP8266", "Smoke Sensor", "Safety Systems"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Smoke%20Detection%20system",
+        category: "hardware"
+    },
+    {
+        id: "surveillance-robot-esp32cam",
+        title: "ESP32-CAM Surveillance Robot",
+        description: "A 4-wheel drive surveillance robot powered by an ESP32-CAM module. It streams live video and can be remotely controlled in all directions via a custom web interface over WiFi.",
+        focusAreas: ["C++", "ESP32-CAM", "Web Interface", "Robotics"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Surveillance%20Robot%20using%20ESP32-Cam",
+        category: "hardware"
+    },
+    {
+        id: "ultrasonic-distance-esp32",
+        title: "Ultrasonic Distance Indicator",
+        description: "An ESP32-based distance indicator that uses an HC-SR04 ultrasonic sensor to sequentially illuminate a series of 5 LEDs as an object moves closer.",
+        focusAreas: ["C++", "ESP32", "Ultrasonic Sensor", "Hardware UI"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Ultrasonic%20Distance%20Indicator",
+        category: "hardware"
+    },
+    {
+        id: "wifi-light-control-esp8266",
+        title: "WiFi Light Control System",
+        description: "A smart home prototype that controls a light bulb remotely over WiFi using an ESP8266 and a relay. Features a hosted web interface for device toggling from any connected browser.",
+        focusAreas: ["C++", "ESP8266", "Web Server", "Home Automation"],
+        githubUrl: "https://github.com/Asmithcodes/IoT-Projects/tree/main/Wifi%20Light%20Control%20using%20ESP8266",
+        category: "hardware"
+    },
+    {
         id: "verilog-programs",
         title: "Verilog Programs",
         description: "A dedicated Verilog HDL practice space focused on designing, simulating, and documenting digital logic circuits using Xilinx Vivado. Includes clean code, structured testbenches, schematics, and timing diagrams to strengthen HDL fundamentals.",
