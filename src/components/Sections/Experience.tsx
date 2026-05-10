@@ -50,7 +50,7 @@ export function Experience() {
                                 </div>
 
                                 {/* Right side - Duration and Location */}
-                                <div className="flex flex-col gap-2 text-sm">
+                                <div className="flex flex-col gap-2 text-sm shrink-0 md:min-w-max">
                                     <div className="flex items-center gap-1 text-amber-500">
                                         <Briefcase size={14} />
                                         <span className="font-medium">{exp.duration}</span>

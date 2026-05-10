@@ -7,8 +7,8 @@ interface SkillBadgeProps {
 
 export function SkillBadge({ skill, variant = 'primary' }: SkillBadgeProps) {
     const variants = {
-        primary: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-        secondary: 'bg-slate-700/50 text-slate-300 border-slate-600/50'
+        primary: 'bg-amber-500/10 text-amber-400 border-amber-500/60',
+        secondary: 'bg-slate-700/50 text-slate-300 border-amber-500/60'
     };
 
     return (

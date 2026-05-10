@@ -32,7 +32,7 @@ export type Project = {
     type: string;
     description: string;
     focusAreas: string[];
-    githubUrl: string;
+    githubUrl?: string;
     demoUrl?: string;
     isPrimary: boolean;
     isFeatured?: boolean; // For highlighting special projects
@@ -43,10 +43,20 @@ export type Project = {
 export const projects: Project[] = [
     // Primary Projects - Software & Web
     {
+        id: "aquacomply-india",
+        title: "AquaComply India",
+        type: "Internship Project · Thoyam Ecocognitives",
+        description: "An AI-powered environmental compliance self-check tool designed for organizations to audit water and air quality parameters against official CPCB standards. Features AI document parsing of PDF lab reports using the Gemini API, smart validation against regional standards, and automated generation of corrective actions and compliance reports.",
+        focusAreas: ["React + Vite", "Gemini API", "PDF.js", "Tailwind CSS"],
+        demoUrl: "https://asmithcodes.github.io/AquaComply-India/",
+        isPrimary: true,
+        isFeatured: true
+    },
+    {
         id: "lumina",
         title: "Lumina",
         type: "Functional Web Application",
-        description: "Lumina is an AI-powered decision-clarity tool designed to help users think more honestly about complex personal dilemmas. By guiding users through a small set of deliberately challenging questions, Lumina surfaces hidden assumptions, emotional blind spots, and avoided trade-offs, then delivers direct, actionable insights focused on what matters most and what to do next.",
+        description: "An AI-powered decision-analysis tool that uses the Google Gemini API to guide users through structured, psychologically challenging prompts. It automatically synthesizes responses to surface hidden assumptions and deliver actionable clarity on complex personal dilemmas.",
         focusAreas: ["User-focused design", "Practical problem solving", "Accessible UI", "JavaScript logic"],
         githubUrl: "https://github.com/Asmithcodes/Lumina-The-Decision-Engine",
         demoUrl: "https://asmithcodes.github.io/Lumina-The-Decision-Engine/",
@@ -152,6 +162,15 @@ export const skills = {
 };
 
 export const experiences = [
+    {
+        id: "thoyam",
+        role: "Software Developer Intern",
+        company: "Thoyam Ecocognitives Private Limited",
+        location: "Hyderabad",
+        duration: "6 months",
+        description: "Developed AquaComply India, an AI-powered environmental compliance self-check tool. Integrated Google Gemini API and PDF.js to parse PDF lab reports and validate water/air quality parameters against CPCB standards, generating automated compliance reports and actionable corrective actions.",
+        highlights: ["React & TypeScript", "Gemini AI API", "PDF Parsing", "Tailwind CSS"]
+    },
     {
         id: "hal",
         role: "Engineering Intern",

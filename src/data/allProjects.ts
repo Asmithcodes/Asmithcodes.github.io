@@ -12,10 +12,18 @@ export type ProjectItem = {
 
 export const allProjects: ProjectItem[] = [
     {
+        id: "aquacomply-india",
+        title: "AquaComply India",
+        description: "A web application tailored for Indian water quality compliance standards. Helps users assess, track, and report water treatment compliance in line with Indian regulatory frameworks.",
+        focusAreas: ["TypeScript", "React", "Vite"],
+        demoUrl: "https://asmithcodes.github.io/AquaComply-India/",
+        category: "software"
+    },
+    {
         id: "lumina",
-        title: "Lumina — The Decision Engine",
+        title: "Lumina - The Decision Engine",
         stars: 16,
-        description: "An AI-powered decision-making tool that uses deep, piercing questions to expose hidden fears, blind spots, and self-deception. Users answer 5 challenging questions about their dilemma and receive brutally honest, no-nonsense clarity on what action to take.",
+        description: "An AI-powered decision-analysis tool that uses the Google Gemini API to guide users through structured, psychologically challenging prompts. It automatically synthesizes responses to surface hidden assumptions and deliver actionable clarity on complex personal dilemmas.",
         focusAreas: ["TypeScript", "React", "AI API"],
         githubUrl: "https://github.com/Asmithcodes/Lumina-The-Decision-Engine",
         demoUrl: "https://asmithcodes.github.io/Lumina-The-Decision-Engine/",
@@ -208,14 +216,6 @@ export const allProjects: ProjectItem[] = [
         description: "A TypeScript-based web application for designing Sewage Treatment Plant (STP) configurations. Allows users to plan and visualise water treatment workflows, supporting civil and environmental engineering decision-making.",
         focusAreas: ["TypeScript", "React", "Vite"],
         githubUrl: "https://github.com/Asmithcodes/Water-Treatment-STP-Designer",
-        category: "software"
-    },
-    {
-        id: "aquacomply-india",
-        title: "AquaComply India",
-        description: "A web application tailored for Indian water quality compliance standards. Helps users assess, track, and report water treatment compliance in line with Indian regulatory frameworks.",
-        focusAreas: ["TypeScript", "React", "Vite"],
-        githubUrl: "https://github.com/Asmithcodes/AquaComply-India",
         category: "software"
     },
     {
