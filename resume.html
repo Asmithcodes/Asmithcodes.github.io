@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asmith Pampana - Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         /* ATS-Friendly Minimal Base Styles */
         body {
@@ -138,7 +139,8 @@
             <div class="contact-info">
                 <strong>Location:</strong> Hyderabad, India |
                 <strong>Email:</strong> <a href="mailto:asmyth@duck.com">asmyth@duck.com</a> |
-                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/asmithpampana">linkedin.com/in/asmithpampana</a>
+                <strong>LinkedIn:</strong> <a
+                    href="https://linkedin.com/in/asmithpampana">linkedin.com/in/asmithpampana</a>
                 <br>
                 <strong>GitHub:</strong> <a href="https://github.com/Asmithcodes">github.com/Asmithcodes</a> |
                 <strong>Portfolio:</strong> <a href="https://asmithcodes.github.io/">asmithcodes.github.io</a>
@@ -147,68 +149,12 @@
 
         <section>
             <h2>Professional Summary</h2>
-            <p>Final-year ECE student passionate about software development with hands-on experience building web applications using React, TypeScript, and modern APIs | Strong foundation in Python, C/C++, and JavaScript with projects spanning AI integration, API development, and signal processing | Seeking software engineering roles to grow as a developer while leveraging technical problem-solving skills.</p>
+            <p>Final-year ECE student and software developer experienced in building scalable React/TypeScript web
+                applications and API-driven products. Proficient in Python, C/C++, and JavaScript, with practical
+                expertise in AI integrations, IoT systems, and workflow automation. Seeking software engineering roles
+                to build reliable, user-centric products.</p>
         </section>
 
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skills-row"><strong>Languages:</strong> JavaScript, TypeScript, Python, C/C++, Java, HTML, CSS, SQL</div>
-                <div class="skills-row"><strong>Frameworks &amp; Libraries:</strong> React, Node.js, Web Audio API</div>
-                <div class="skills-row"><strong>Tools &amp; Platforms:</strong> Git, GitHub, Vite, Cloudflare Workers, n8n,</div>
-                <div class="skills-row"><strong>Additional Experience:</strong> Embedded Systems (ESP32, Arduino), IoT, DSP, Hardware-Software Integration</div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-
-            <div class="item">
-                <div class="item-header">
-                    <span>Lumina - AI Decision-Clarity Engine | Google Gemini, React</span>
-                    <span><a href="https://github.com/Asmithcodes/Lumina-The-Decision-Engine">GitHub</a></span>
-                </div>
-                <ul>
-                    <li>Engineered an AI-powered decision analysis tool using Google Gemini API, delivering structured 5-step clarity reports per query in under 2 seconds.</li>
-                    <li>Designed intelligent questioning algorithms to surface hidden assumptions and emotional blind spots, improving decision quality for ambiguous problem scenarios.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <span>AetherWay - Travel Planning | Full-Stack, API Integration</span>
-                    <span><a href="https://github.com/Asmithcodes/AetherWay-Travel-Planning">GitHub</a></span>
-                </div>
-                <ul>
-                    <li>Built a full-stack travel planning platform aggregating real-time pricing and routes across 3+ transport modes via AI-powered search integration.</li>
-                    <li>Optimized multi-modal route comparison logic, consolidating data from multiple APIs to surface ranked travel options in a single interface.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <span>Acoustic Data Link | Web Audio API, DSP, React</span>
-                    <span><a href="https://github.com/Asmithcodes/Transmit-via-Sound">GitHub</a></span>
-                </div>
-                <ul>
-                    <li>Implemented a browser-based 8-FSK acoustic data link encoding 3 bits per symbol, achieving reliable air-gapped peer-to-peer data transfer without network infrastructure.</li>
-                    <li>Designed SNR-based handshake detection and CRC32 integrity verification, reducing transmission error rates to under 1% at operational noise thresholds.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <span>AI Music Discovery | API Integration, Interactive UI</span>
-                    <span><a href="https://github.com/Asmithcodes/AI-Music-Discovery">GitHub</a></span>
-                </div>
-                <ul>
-                    <li>Developed an interactive web application generating personalized song recommendations based on user mood, activity, and region.</li>
-                    <li>Integrated real-time Spotify API verification to eliminate hallucinated tracks, ensuring 100% of recommended songs are valid and playable.</li>
-                </ul>
-            </div>
-
-        </section>
-        <br><br>
         <section>
             <h2>Work Experience</h2>
 
@@ -224,7 +170,8 @@
                 <ul>
                     <li>Developed a Python-based simulation to model and validate data-link establishment logic between
                         distributed systems.</li>
-                    <li>Mapped state transitions and failure modes across multi-node communication scenarios, improving simulation coverage and reliability analysis.</li>
+                    <li>Mapped state transitions and failure modes across multi-node communication scenarios, improving
+                        simulation coverage and reliability analysis.</li>
                 </ul>
             </div>
 
@@ -238,9 +185,10 @@
                     <span>Mar 2025 - Apr 2025</span>
                 </div>
                 <ul>
-                    <li>Prototyped IoT systems using ESP32, integrating multiple sensors and actuators to accelerate embedded hardware build-test cycles.</li>
-                    <li>Programmed ESP32 microcontrollers in C/C++ for real-time sensor acquisition and motor control across robotics experiments.</li>
-                    <!-- <li>Built surveillance robots using ESP32-CAM and human-following systems leveraging ultrasonic and IR sensor arrays.</li> -->
+                    <li>Prototyped IoT systems using ESP32, integrating multiple sensors and actuators to accelerate
+                        embedded hardware build-test cycles.</li>
+                    <li>Programmed ESP32 microcontrollers in C/C++ for real-time sensor acquisition and motor control
+                        across robotics experiments.</li>
                 </ul>
             </div>
 
@@ -254,9 +202,156 @@
                     <span>Dec 2024 - Jan 2025</span>
                 </div>
                 <ul>
-                    <li>Documented PCB assembly and quality inspection workflows across surface-mount production lines, mapping end-to-end manufacturing processes.</li>
-                    <li>Analyzed industrial electronics architectures and component selection criteria to evaluate production-grade design and fault-tolerance standards.</li>
+                    <li>Documented PCB assembly and quality inspection workflows across surface-mount production lines,
+                        mapping end-to-end manufacturing processes.</li>
+                    <li>Analyzed industrial electronics architectures and component selection criteria to evaluate
+                        production-grade design and fault-tolerance standards.</li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Notable Projects</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Lumina - AI Decision-Clarity Engine | Google Gemini, React</span>
+                    <span><a href="https://github.com/Asmithcodes/Lumina-The-Decision-Engine">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Engineered an AI-powered decision analysis tool using Google Gemini API, delivering structured
+                        5-step clarity reports per query in under 2 seconds.</li>
+                    <li>Designed intelligent questioning algorithms to surface hidden assumptions and emotional blind
+                        spots, improving decision quality for ambiguous problem scenarios.</li>
+                </ul>
+            </div>
+
+            <!-- <div class="item">
+                <div class="item-header">
+                    <span>AetherWay - Travel Planning | Full-Stack, API Integration</span>
+                    <span><a href="https://github.com/Asmithcodes/AetherWay-Travel-Planning">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Built a full-stack travel planning platform aggregating real-time pricing and routes across 3+ transport modes via AI-powered search integration.</li>
+                    <li>Optimized multi-modal route comparison logic, consolidating data from multiple APIs to surface ranked travel options in a single interface.</li>
+                </ul>
+            </div> -->
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Acoustic Data Link | Web Audio API, DSP, React</span>
+                    <span><a href="https://github.com/Asmithcodes/Transmit-via-Sound">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Implemented a browser-based 8-FSK acoustic data link encoding 3 bits per symbol, achieving
+                        reliable air-gapped peer-to-peer data transfer without network infrastructure.</li>
+                    <li>Designed SNR-based handshake detection and CRC32 integrity verification, reducing transmission
+                        error rates to under 1% at operational noise thresholds.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>QR A3 Batch Generator | React, TypeScript, Vite</span>
+                    <span><a href="https://github.com/Asmithcodes/QR-A3-Batch-Generator">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Built a lightweight web app that generates batches of QR codes from pasted or uploaded data and
+                        arranges them on A3-ready print sheets.</li>
+                    <li>Implemented layout customization and high-resolution export workflows using React + TypeScript
+                        with html2canvas for print-friendly output.</li>
+                </ul>
+            </div>
+
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Wireless Head Tracking System | C++, ESP32, ESP-NOW</span>
+                    <span><a href="https://github.com/Asmithcodes/Wireless-Headtracking-System">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Built an ESP32-based wireless head tracking system using ESP-NOW for low-latency communication
+                        and MPU6050/MPU6500 sensors for precise yaw and pitch tracking.</li>
+                    <li>Designed for VR/AR and robotics applications with real-time data transmission, error handling,
+                        and a modular codebase for easy customisation.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>ESP32-CAM Surveillance Robot | C++, ESP32-CAM, Robotics</span>
+                    <span><a
+                            href="https://github.com/Asmithcodes/IoT-Projects/tree/main/Surveillance%20Robot%20using%20ESP32-Cam">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Engineered a 4-wheel drive surveillance robot powered by an ESP32-CAM module with live video
+                        streaming over WiFi.</li>
+                    <li>Built a custom web interface for full directional remote control, enabling real-time monitoring
+                        from any connected browser.</li>
+                </ul>
+            </div>
+
+            <!-- <div class="item">
+                <div class="item-header">
+                    <span>Smart Vehicle Entry System | C++, Arduino Nano, RFID</span>
+                    <span><a href="https://github.com/Asmithcodes/IoT-Projects/tree/main/RFID%20Parking%20system%20using%20Arduino%20Nano">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Developed an RFID-based smart parking system with a servo-controlled gate barrier, IR exit detection, and I2C LCD for live capacity tracking.</li>
+                    <li>Implemented vehicle authentication logic on Arduino Nano to allow or deny entry based on registered RFID credentials.</li>
+                </ul>
+            </div> -->
+
+            <!-- QR Code Section for Portfolios -->
+            <div style="display: flex; gap: 20px; justify-content: center; margin-top: 15px; margin-bottom: 25px;"
+                class="no-print-break">
+                <!-- Software Projects QR -->
+                <div style="flex: 1; display: flex; align-items: center; padding: 16px; border: 1.5px dashed #000;">
+                    <div id="software-qrcode" style="width: 70px; height: 70px; margin-right: 15px;"></div>
+                    <div>
+                        <strong style="display: block; font-size: 11pt; margin-bottom: 2px;">Software Projects</strong>
+                        <span style="font-size: 10pt; line-height: 1.3; display: block;">Scan to view my web
+                            applications, AI tools, and software solutions.</span>
+                    </div>
+                </div>
+
+                <!-- Hardware Projects QR -->
+                <div style="flex: 1; display: flex; align-items: center; padding: 16px; border: 1.5px dashed #000;">
+                    <div id="hardware-qrcode" style="width: 70px; height: 70px; margin-right: 15px;"></div>
+                    <div>
+                        <strong style="display: block; font-size: 11pt; margin-bottom: 2px;">Hardware Projects</strong>
+                        <span style="font-size: 10pt; line-height: 1.3; display: block;">Scan to view my embedded
+                            systems, IoT devices, and robotics projects.</span>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                new QRCode(document.getElementById("software-qrcode"), {
+                    text: "https://asmithcodes.github.io/#/software-projects",
+                    width: 70,
+                    height: 70
+                });
+
+                new QRCode(document.getElementById("hardware-qrcode"), {
+                    text: "https://asmithcodes.github.io/#/hardware-projects",
+                    width: 70,
+                    height: 70
+                });
+            </script>
+
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-row"><strong>Languages:</strong> JavaScript, TypeScript, Python, C/C++, Java, HTML,
+                    CSS, SQL</div>
+                <div class="skills-row"><strong>Frameworks &amp; Libraries:</strong> React, Node.js, Web Audio API</div>
+                <div class="skills-row"><strong>Tools &amp; Platforms:</strong> Git, GitHub, Vite, Cloudflare Workers,
+                    n8n</div>
+                <div class="skills-row"><strong>Core Software Skills:</strong> Data Structures, OOP, API Integration,
+                    Problem Solving</div>
             </div>
         </section>
 
@@ -300,18 +395,45 @@
         </section>
 
         <section>
-            <h2>Languages</h2>
-            <ul>
-                <li>English (Professional Proficiency)</li>
-                <li>Telugu (Native)</li>
-                <li>Hindi (Conversational)</li>
-            </ul>
+            <h2>Certifications</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Cisco Python Essentials 1 Certificate</span>
+                    <span>March 2025</span>
+                </div>
+                <div class="item-sub">
+                    <span>Programming Certification</span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Cisco Networking Basics Certificate</span>
+                    <span>April 2025</span>
+                </div>
+                <div class="item-sub">
+                    <span>Networking Certification</span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Cisco C++ Essentials Certificate</span>
+                    <span>March 2026</span>
+                </div>
+                <div class="item-sub">
+                    <span>Programming Certification</span>
+                    <span></span>
+                </div>
+            </div>
         </section>
-        
-        <section>
+
+        <!-- DECLARATION -->
+        <!-- <section>
             <h2>Declaration</h2>
-            <p>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
-        </section>
+            <p class="declaration-text">I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
+        </section> -->
     </div>
 </body>
+
 </html>
