@@ -7,7 +7,7 @@ export const personalInfo = {
     email: "asmyth@duck.com",
     linkedin: "https://www.linkedin.com/in/asmithpampana/",
     github: "https://github.com/Asmithcodes",
-    resumeUrl: "/Asmith_Pampana_Resume.pdf", // Placeholder - replace with actual resume URL
+    resumeUrl: "/Asmith - Resume.pdf", // Placeholder - replace with actual resume URL
     photoUrl: "/AsmithPhoto.png", // Placeholder - replace with actual photo
 };
 
