@@ -3,7 +3,8 @@
 export const personalInfo = {
     name: "Asmith Pampana",
     role: "Software-Focused ECE Student | Functional Web Applications & System Prototypes",
-    tagline: "Building real, working systems through hands-on development and rapid experimentation.",
+    tagline:
+        "Building real, working systems through hands-on development and rapid experimentation.",
     email: "asmyth@duck.com",
     linkedin: "https://www.linkedin.com/in/asmithpampana/",
     github: "https://github.com/Asmithcodes",
@@ -15,15 +16,15 @@ export const aboutContent = {
     paragraphs: [
         "I'm a final-year Electronics and Communication Engineering student with a strong foundation in embedded systems, IoT, and hardware-software integration. Recently, I've gravitated toward building functional web applications and software tools — discovering a deep interest in creating solutions that people can actually use.",
         "I enjoy rapid prototyping and proof-of-concept development, approaching problems with a systems thinking mindset. Whether it's spinning up a web application or debugging a microcontroller, I value clarity, structured problem solving, and hands-on experimentation.",
-        "My background in electronics gives me a unique perspective on software — understanding both sides of the stack has made me comfortable working across domains and tackling challenges that bridge hardware and software."
+        "My background in electronics gives me a unique perspective on software — understanding both sides of the stack has made me comfortable working across domains and tackling challenges that bridge hardware and software.",
     ],
     highlights: [
         "Final-year B.Tech ECE student",
         "Web application development focus",
         "Rapid prototyping & PoC development",
         "Systems thinking approach",
-        "Hardware-software integration experience"
-    ]
+        "Hardware-software integration experience",
+    ],
 };
 
 export type Project = {
@@ -46,40 +47,60 @@ export const projects: Project[] = [
         id: "aquacomply-india",
         title: "AquaComply India",
         type: "Internship Project · Thoyam Ecocognitives",
-        description: "An AI-powered environmental compliance self-check tool designed for organizations to audit water and air quality parameters against official CPCB standards. Features AI document parsing of PDF lab reports using the Gemini API, smart validation against regional standards, and automated generation of corrective actions and compliance reports.",
+        description:
+            "An AI-powered environmental compliance self-check tool designed for organizations to audit water and air quality parameters against official CPCB standards. Features AI document parsing of PDF lab reports using the Gemini API, smart validation against regional standards, and automated generation of corrective actions and compliance reports.",
         focusAreas: ["React + Vite", "Gemini API", "PDF.js", "Tailwind CSS"],
         demoUrl: "https://asmithcodes.github.io/AquaComply-India/",
         isPrimary: true,
-        isFeatured: true
+        isFeatured: true,
     },
     {
         id: "lumina",
         title: "Lumina",
         type: "Functional Web Application",
-        description: "An AI-powered decision-analysis tool that uses the Google Gemini API to guide users through structured, psychologically challenging prompts. It automatically synthesizes responses to surface hidden assumptions and deliver actionable clarity on complex personal dilemmas.",
-        focusAreas: ["User-focused design", "Practical problem solving", "Accessible UI", "JavaScript logic"],
+        description:
+            "An AI-powered decision-analysis tool that uses the Google Gemini API to guide users through structured, psychologically challenging prompts. It automatically synthesizes responses to surface hidden assumptions and deliver actionable clarity on complex personal dilemmas.",
+        focusAreas: [
+            "User-focused design",
+            "Practical problem solving",
+            "Accessible UI",
+            "JavaScript logic",
+        ],
         githubUrl: "https://github.com/Asmithcodes/Lumina-The-Decision-Engine",
         demoUrl: "https://asmithcodes.github.io/Lumina-The-Decision-Engine/",
         isPrimary: true,
-        isFeatured: true
+        isFeatured: true,
     },
     {
         id: "transmit-via-sound",
         title: "Acoustic Data Link",
         type: "Functional Web Application",
-        description: "A browser-based acoustic data link for air-gapped, peer-to-peer communication — no Wi-Fi, Bluetooth, or cellular required. Encodes text and files into 8-FSK audio signals using the Web Audio API, transmitted over a device's speaker and decoded by a nearby microphone. Features a custom FSK protocol with look-ahead scheduling, SNR-based handshake detection, CRC32 data integrity verification, and a distinctive vintage signal-intelligence UI.",
-        focusAreas: ["Web Audio API", "DSP / FSK modulation", "React + Vite", "Real-time signal processing", "Protocol design"],
+        description:
+            "A browser-based acoustic data link for air-gapped, peer-to-peer communication — no Wi-Fi, Bluetooth, or cellular required. Encodes text and files into 8-FSK audio signals using the Web Audio API, transmitted over a device's speaker and decoded by a nearby microphone. Features a custom FSK protocol with look-ahead scheduling, SNR-based handshake detection, CRC32 data integrity verification, and a distinctive vintage signal-intelligence UI.",
+        focusAreas: [
+            "Web Audio API",
+            "DSP / FSK modulation",
+            "React + Vite",
+            "Real-time signal processing",
+            "Protocol design",
+        ],
         githubUrl: "https://github.com/Asmithcodes/Transmit-via-Sound",
         demoUrl: "https://asmithcodes.github.io/Transmit-via-Sound/",
         isPrimary: true,
-        isFeatured: true
+        isFeatured: true,
     },
     {
         id: "aetherway",
         title: "AetherWay",
         type: "Travel Planning Application",
-        description: "An intelligent travel planning application that compares flights, trains, buses, and self-drive options in real time. The system aggregates live pricing, route optimization, and direct booking links using AI-powered search, presenting users with the most practical and efficient travel choices through a fast, dark-themed interface with saved searches and favorites.",
-        focusAreas: ["Full-stack development", "User experience", "Data management", "Interactive UI"],
+        description:
+            "An intelligent travel planning application that compares flights, trains, buses, and self-drive options in real time. The system aggregates live pricing, route optimization, and direct booking links using AI-powered search, presenting users with the most practical and efficient travel choices through a fast, dark-themed interface with saved searches and favorites.",
+        focusAreas: [
+            "Full-stack development",
+            "User experience",
+            "Data management",
+            "Interactive UI",
+        ],
         githubUrl: "https://github.com/Asmithcodes/AetherWay-Travel-Planning",
         demoUrl: "https://asmithcodes.github.io/AetherWay-Travel-Planning/",
         isPrimary: true,
@@ -89,39 +110,64 @@ export const projects: Project[] = [
         id: "qr-generator",
         title: "QR A3 Batch Generator",
         type: "Proof-of-Concept Web Tool",
-        description: "A lightweight web application for generating QR codes in bulk and arranging them into print-ready A3 layouts. Users can paste or upload data, customize layout and spacing controls, and export high-resolution printable sheets. Built with a focus on usability, fast iteration, and real-world utility.",
-        focusAreas: ["Web development", "JavaScript logic", "Rapid prototyping", "Real-world utility"],
+        description:
+            "A lightweight web application for generating QR codes in bulk and arranging them into print-ready A3 layouts. Users can paste or upload data, customize layout and spacing controls, and export high-resolution printable sheets. Built with a focus on usability, fast iteration, and real-world utility.",
+        focusAreas: [
+            "Web development",
+            "JavaScript logic",
+            "Rapid prototyping",
+            "Real-world utility",
+        ],
         githubUrl: "https://github.com/Asmithcodes/QR-A3-Batch-Generator",
         demoUrl: "https://qr-a3-batch-generator.netlify.app/",
-        isPrimary: true
+        isPrimary: true,
     },
     {
         id: "ai-music",
         title: "AI Music Discovery",
         type: "Interactive Web Application",
-        description: "An AI-assisted music discovery application that generates personalized song recommendations based on user context such as mood, activity, and region. The system verifies each recommendation against Spotify in real time to eliminate non-existent or incorrect tracks, ensuring only valid, playable results and seamless playlist creation.",
-        focusAreas: ["JavaScript", "Frontend logic", "Interactive UI", "Creative experimentation"],
+        description:
+            "An AI-assisted music discovery application that generates personalized song recommendations based on user context such as mood, activity, and region. The system verifies each recommendation against Spotify in real time to eliminate non-existent or incorrect tracks, ensuring only valid, playable results and seamless playlist creation.",
+        focusAreas: [
+            "JavaScript",
+            "Frontend logic",
+            "Interactive UI",
+            "Creative experimentation",
+        ],
         githubUrl: "https://github.com/Asmithcodes/AI-Music-Discovery",
         demoUrl: "https://asmithcodes.github.io/AI-Music-Discovery/",
-        isPrimary: true
+        isPrimary: true,
     },
     // Secondary Projects - Systems & Embedded
     {
         id: "wireless-headtracking",
         title: "Wireless Head Tracking System",
         type: "Embedded Systems Project",
-        description: "An ESP32-based wireless head tracking system featuring dual IMU sensor fusion (MPU6500 + MPU6050) for precise yaw and pitch tracking. Uses ESP-NOW protocol for low-latency communication (~100ms at 10Hz) between a wearable transmitter unit and servo-controlled receiver. Designed for VR/AR applications, camera gimbals, and interactive robotics with automatic gyroscope calibration, signal filtering, and real-time data validation.",
-        focusAreas: ["ESP32 development", "Sensor fusion", "Wireless protocols", "Real-time systems", "Hardware-software integration"],
+        description:
+            "An ESP32-based wireless head tracking system featuring dual IMU sensor fusion (MPU6500 + MPU6050) for precise yaw and pitch tracking. Uses ESP-NOW protocol for low-latency communication (~100ms at 10Hz) between a wearable transmitter unit and servo-controlled receiver. Designed for VR/AR applications, camera gimbals, and interactive robotics with automatic gyroscope calibration, signal filtering, and real-time data validation.",
+        focusAreas: [
+            "ESP32 development",
+            "Sensor fusion",
+            "Wireless protocols",
+            "Real-time systems",
+            "Hardware-software integration",
+        ],
         githubUrl: "https://github.com/Asmithcodes/Wireless-Headtracking-System",
         isPrimary: false,
-        isFeatured: true
+        isFeatured: true,
     },
     {
         id: "iot-prototypes",
         title: "IoT & Embedded Prototypes",
         type: "Internship Work · EduTech Innovations",
-        description: "Multiple IoT and embedded system prototypes created for educational and proof-of-concept purposes. Focused on rapid development, sensor integration, microcontroller programming, and wireless communication.",
-        focusAreas: ["ESP32", "Sensor integration", "IoT dashboards", "Wireless communication"],
+        description:
+            "Multiple IoT and embedded system prototypes created for educational and proof-of-concept purposes. Focused on rapid development, sensor integration, microcontroller programming, and wireless communication.",
+        focusAreas: [
+            "ESP32",
+            "Sensor integration",
+            "IoT dashboards",
+            "Wireless communication",
+        ],
         githubUrl: "https://github.com/Asmithcodes/IoT-Projects",
         isPrimary: false,
         isGroup: true,
@@ -129,18 +175,19 @@ export const projects: Project[] = [
             "Surveillance Robot using ESP32-CAM (4WD)",
             "Human Following Robot",
             "Sensor-based data logging prototypes",
-            "Web-connected IoT dashboards"
-        ]
+            "Web-connected IoT dashboards",
+        ],
     },
     {
         id: "verilog",
         title: "Verilog Programs",
         type: "Digital Design Fundamentals",
-        description: "A collection of Verilog programs showcasing foundational understanding of digital logic and hardware description concepts.",
+        description:
+            "A collection of Verilog programs showcasing foundational understanding of digital logic and hardware description concepts.",
         focusAreas: ["Verilog HDL", "Digital logic", "Hardware design"],
         githubUrl: "https://github.com/Asmithcodes/Verilog-Programs",
-        isPrimary: false
-    }
+        isPrimary: false,
+    },
 ];
 
 export const skills = {
@@ -150,26 +197,32 @@ export const skills = {
         "Python",
         "React",
         "Rapid Prototyping",
-        "Systems Thinking"
+        "Systems Thinking",
     ],
     secondary: [
         "Embedded Systems",
         "Microcontrollers (ESP32, Arduino)",
         "IoT Concepts",
         "Hardware-Software Integration",
-        "Verilog HDL"
-    ]
+        "Verilog HDL",
+    ],
 };
 
 export const experiences = [
     {
         id: "thoyam",
         role: "Software Developer Intern",
-        company: "Thoyam Ecocognitives Private Limited",
+        company: "Thoyam Ecocognitives Pvt. Ltd.",
         location: "Hyderabad",
         duration: "6 months",
-        description: "Developed AquaComply India, an AI-powered environmental compliance self-check tool. Integrated Google Gemini API and PDF.js to parse PDF lab reports and validate water/air quality parameters against CPCB standards, generating automated compliance reports and actionable corrective actions.",
-        highlights: ["React & TypeScript", "Gemini AI API", "PDF Parsing", "Tailwind CSS"]
+        description:
+            "Developed AquaComply India, an AI-powered environmental compliance self-check tool. Integrated Google Gemini API and PDF.js to parse PDF lab reports and validate water/air quality parameters against CPCB standards, generating automated compliance reports and actionable corrective actions.",
+        highlights: [
+            "React & TypeScript",
+            "Gemini AI API",
+            "PDF Parsing",
+            "Tailwind CSS",
+        ],
     },
     {
         id: "hal",
@@ -177,8 +230,14 @@ export const experiences = [
         company: "Hindustan Aeronautics Limited (HAL)",
         location: "Hyderabad",
         duration: "3 months",
-        description: "Developed a Python-based simulation to model and validate data-link establishment logic between two distributed systems. Focused on analyzing system behavior, state transitions, and reliability within a controlled simulation environment.",
-        highlights: ["Python simulation", "System behavior modeling", "Logic validation", "Reliability testing"]
+        description:
+            "Developed a Python-based simulation to model and validate data-link establishment logic between two distributed systems. Focused on analyzing system behavior, state transitions, and reliability within a controlled simulation environment.",
+        highlights: [
+            "Python simulation",
+            "System behavior modeling",
+            "Logic validation",
+            "Reliability testing",
+        ],
     },
     {
         id: "edutech",
@@ -186,8 +245,14 @@ export const experiences = [
         company: "EduTech Innovations",
         location: "Hyderabad",
         duration: "2 months",
-        description: "Worked on rapid prototyping of IoT systems and embedded projects. Gained hands-on experience with sensor integration, microcontroller programming, and system-level experimentation.",
-        highlights: ["Rapid prototyping", "ESP32 development", "IoT systems", "Embedded programming"]
+        description:
+            "Worked on rapid prototyping of IoT systems and embedded projects. Gained hands-on experience with sensor integration, microcontroller programming, and system-level experimentation.",
+        highlights: [
+            "Rapid prototyping",
+            "ESP32 development",
+            "IoT systems",
+            "Embedded programming",
+        ],
     },
     {
         id: "accord",
@@ -195,9 +260,14 @@ export const experiences = [
         company: "Accord Power Digital Products",
         location: "Hyderabad",
         duration: "1 month",
-        description: "Gained exposure to electronics manufacturing processes, PCB design fundamentals, and industrial systems. Developed understanding of production-grade electronics development.",
-        highlights: ["Electronics manufacturing", "PCB design", "Industrial systems"]
-    }
+        description:
+            "Gained exposure to electronics manufacturing processes, PCB design fundamentals, and industrial systems. Developed understanding of production-grade electronics development.",
+        highlights: [
+            "Electronics manufacturing",
+            "PCB design",
+            "Industrial systems",
+        ],
+    },
 ];
 
 export const education = {
@@ -205,7 +275,7 @@ export const education = {
     institution: "Vidya Jyothi Institute of Technology",
     location: "Hyderabad",
     cgpa: "8.95",
-    status: "Final Year"
+    status: "Final Year",
 };
 
 export const navLinks = [
@@ -214,5 +284,5 @@ export const navLinks = [
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
-    { id: "contact", label: "Contact" }
+    { id: "contact", label: "Contact" },
 ];
