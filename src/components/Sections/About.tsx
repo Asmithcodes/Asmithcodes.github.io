@@ -25,7 +25,7 @@ export function About() {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     viewport={{ once: true }}
                                 >
-                                    <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-amber-500/30 bg-slate-800/50 mx-auto sm:mx-0">
+                                    <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border-2 border-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.35)] bg-slate-800/50 mx-auto sm:mx-0">
                                         {personalInfo.photoUrl && personalInfo.photoUrl !== '/placeholder-photo.jpg' ? (
                                             <img
                                                 src={personalInfo.photoUrl}
@@ -82,7 +82,7 @@ export function About() {
 
                     {/* Highlights sidebar */}
                     <div>
-                        <Card className="p-6" glow animateFrom="right">
+                        <Card className="p-6" glow featured={true} animateFrom="right">
                             <h3 className="text-lg font-semibold text-white mb-4">Quick Facts</h3>
                             <ul className="space-y-3">
                                 {aboutContent.highlights.map((highlight, index) => (

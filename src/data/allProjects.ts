@@ -50,7 +50,7 @@ export const allProjects: ProjectItem[] = [
     {
         id: "ai-music-discovery",
         title: "AI Music Discovery",
-        description: "An AI-assisted music discovery app that generates personalized song recommendations based on user context — mood, activity, and region. Each recommendation is verified against Spotify in real time to filter out non-existent tracks, ensuring reliable playback and seamless playlist creation.",
+        description: "An AI-assisted music discovery app that generates personalized song recommendations based on user context - mood, activity, and region. Each recommendation is verified against Spotify in real time to filter out non-existent tracks, ensuring reliable playback and seamless playlist creation.",
         focusAreas: ["JavaScript", "Spotify Web API", "AI"],
         githubUrl: "https://github.com/Asmithcodes/AI-Music-Discovery",
         demoUrl: "https://asmithcodes.github.io/AI-Music-Discovery/",
@@ -58,7 +58,7 @@ export const allProjects: ProjectItem[] = [
     },
     {
         id: "aetherway",
-        title: "AetherWay — Intelligent Travel Planning",
+        title: "AetherWay - Intelligent Travel Planning",
         description: "An intelligent travel planning app that compares flights, trains, buses, and self-drive options in real-time. Powered by Google Gemini AI with grounded search, it finds live prices, optimal routes, and functional booking links. Features a kinetic UI, dark theme, user authentication, favorites, and search history.",
         focusAreas: ["TypeScript", "Google Gemini AI", "React"],
         githubUrl: "https://github.com/Asmithcodes/AetherWay-Travel-Planning",
@@ -75,7 +75,7 @@ export const allProjects: ProjectItem[] = [
     },
     {
         id: "bizcard",
-        title: "Bizcard — AI Business Card Scanner",
+        title: "Bizcard - AI Business Card Scanner",
         description: "An AI-powered business card scanner that leverages Google Gemini to extract structured contact information from card images and automatically syncs the data to Google Sheets via cloud integration. Eliminates manual entry and enables efficient digital contact management.",
         focusAreas: ["TypeScript", "Google Gemini", "Google Sheets API"],
         demoUrl: "https://asmithcodes.github.io/Bizcard/",
