@@ -159,7 +159,6 @@ function ProjectCard({ project, index, isFeatured = false }: { project: Project;
 
 export function Projects() {
     const featuredProjects = projects.filter(p => p.isFeatured);
-    const primaryProjects = projects.filter(p => p.isPrimary && !p.isFeatured);
     const secondaryProjects = projects.filter(p => !p.isPrimary && !p.isFeatured);
 
     return (
@@ -183,21 +182,6 @@ export function Projects() {
                             <ProjectCard key={project.id} project={project} index={index} isFeatured={true} />
                         ))}
                     </motion.div>
-                )}
-
-                {/* Primary Projects - Software & Web */}
-                {primaryProjects.length > 0 && (
-                    <div className="mb-16">
-                        <h3 className="text-lg font-medium text-amber-500 mb-6 flex items-center gap-2">
-                            <span className="w-8 h-px bg-amber-500/50" />
-                            Other Software & Web Applications
-                        </h3>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            {primaryProjects.map((project, index) => (
-                                <ProjectCard key={project.id} project={project} index={index} />
-                            ))}
-                        </div>
-                    </div>
                 )}
 
                 {/* Secondary Projects - Systems & Embedded */}
