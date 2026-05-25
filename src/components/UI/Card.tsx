@@ -90,7 +90,7 @@ export function Card({
                     }}
                 />
             )}
-            <div className="relative z-10 transform-gpu">{children}</div>
+            <div className={`relative z-10 transform-gpu ${className.includes('flex-col') ? 'h-full flex flex-col flex-grow' : ''}`}>{children}</div>
         </motion.div>
     );
 }

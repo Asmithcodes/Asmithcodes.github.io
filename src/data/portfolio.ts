@@ -187,6 +187,13 @@ export const projects: Project[] = [
         focusAreas: ["Verilog HDL", "Digital logic", "Hardware design"],
         githubUrl: "https://github.com/Asmithcodes/Verilog-Programs",
         isPrimary: false,
+        isGroup: true,
+        groupItems: [
+            "Logic gates & multiplexers",
+            "Adders, subtractors & ALUs",
+            "Flip-flops & registers",
+            "Finite State Machines (FSMs)",
+        ],
     },
 ];
 

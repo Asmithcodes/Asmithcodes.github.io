@@ -83,16 +83,10 @@ function ProjectCard({ project, index, isFeatured = false }: { project: Project;
     }
 
     return (
-        <Card className="p-6 h-full flex flex-col" glow={project.isPrimary} animateFrom={animateFrom}>
+        <Card className="p-6 h-full flex flex-col" glow={project.isPrimary} featured={true} animateFrom={animateFrom}>
             {/* Header */}
             <div className="mb-4">
-                <span className={`
-          inline-block px-3 py-1 rounded-full text-xs font-medium mb-3
-          ${project.isPrimary
-                        ? 'bg-amber-500/20 text-amber-400'
-                        : 'bg-slate-700/50 text-slate-400'
-                    }
-        `}>
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 bg-amber-500/20 text-amber-400 border border-amber-500/30">
                     {project.type}
                 </span>
                 <h3 className="text-xl font-semibold text-white">{project.title}</h3>
@@ -131,7 +125,7 @@ function ProjectCard({ project, index, isFeatured = false }: { project: Project;
             </div>
 
             {/* Links */}
-            <div className="flex items-center gap-4 pt-4 border-t border-white/10">
+            <div className="flex items-center gap-4 pt-4 border-t border-white/10 mt-auto">
                 <a
                     href={project.githubUrl}
                     target="_blank"
@@ -186,8 +180,8 @@ export function Projects() {
 
                 {/* Secondary Projects - Systems & Embedded */}
                 <div>
-                    <h3 className="text-lg font-medium text-slate-400 mb-6 flex items-center gap-2">
-                        <span className="w-8 h-px bg-slate-500/50" />
+                    <h3 className="text-lg font-medium text-amber-500 mb-6 flex items-center gap-2">
+                        <span className="w-8 h-px bg-amber-500/50" />
                         Systems & Embedded (Foundational)
                     </h3>
                     <div className="grid md:grid-cols-2 gap-6 mb-10">
@@ -210,7 +204,7 @@ export function Projects() {
                             </a>
                             <a
                                 href="#/hardware-projects"
-                                className="group flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl transition-all border border-slate-700 hover:border-slate-600 shadow-lg"
+                                className="group flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl transition-all border border-amber-500/40 hover:border-amber-500 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)] shadow-lg"
                             >
                                 <span>Hardware & Embedded</span>
                                 <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
