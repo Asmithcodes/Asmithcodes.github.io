@@ -2,7 +2,7 @@
 
 export const personalInfo = {
     name: "Asmith Pampana",
-    role: "Software-Focused ECE Student | Functional Web Applications & System Prototypes",
+    role: "Software-Focused ECE Graduate | Functional Web Applications & System Prototypes",
     tagline:
         "Building real, working systems through hands-on development and rapid experimentation.",
     email: "asmyth@duck.com",
@@ -14,12 +14,12 @@ export const personalInfo = {
 
 export const aboutContent = {
     paragraphs: [
-        "I'm a final-year Electronics and Communication Engineering student with a strong foundation in embedded systems, IoT, and hardware-software integration. Recently, I've gravitated toward building functional web applications and software tools — discovering a deep interest in creating solutions that people can actually use.",
+        "I'm an Electronics and Communication Engineering graduate with a strong foundation in embedded systems, IoT, and hardware-software integration. I've gravitated toward building functional web applications and software tools — with a deep interest in creating solutions that people can actually use.",
         "I enjoy rapid prototyping and proof-of-concept development, approaching problems with a systems thinking mindset. Whether it's spinning up a web application or debugging a microcontroller, I value clarity, structured problem solving, and hands-on experimentation.",
         "My background in electronics gives me a unique perspective on software — understanding both sides of the stack has made me comfortable working across domains and tackling challenges that bridge hardware and software.",
     ],
     highlights: [
-        "Final-year B.Tech ECE student",
+        "B.Tech ECE Graduate",
         "Web application development focus",
         "Rapid prototyping & PoC development",
         "Systems thinking approach",
@@ -282,7 +282,7 @@ export const education = {
     institution: "Vidya Jyothi Institute of Technology",
     location: "Hyderabad",
     cgpa: "8.95",
-    status: "Final Year",
+    status: "Graduated",
 };
 
 export const navLinks = [

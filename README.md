@@ -4,7 +4,7 @@ A modern, interactive portfolio showcasing my work in software development, web 
 
 ## About This Portfolio
 
-This portfolio represents my journey as a final-year Electronics and Communication Engineering student with a strong focus on building functional, real-world applications. It highlights my transition from embedded systems and IoT work to full-stack web development, demonstrating a systems-thinking approach to problem-solving.
+This portfolio represents my journey as an Electronics and Communication Engineering graduate with a strong focus on building functional, real-world applications. It highlights my transition from embedded systems and IoT work to full-stack web development, demonstrating a systems-thinking approach to problem-solving.
 
 ## Featured Work
 

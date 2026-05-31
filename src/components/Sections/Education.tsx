@@ -41,7 +41,7 @@ export function Education() {
                                 {/* CGPA Display */}
                                 <div className="mt-6 pt-4 border-t border-white/10">
                                     <div className="flex items-center justify-between">
-                                        <span className="text-slate-400 text-sm">Current CGPA</span>
+                                        <span className="text-slate-400 text-sm">Final CGPA</span>
                                         <span className="text-2xl font-bold text-white">
                                             {education.cgpa}
                                             <span className="text-slate-500 text-sm font-normal">/10</span>
