@@ -14,9 +14,9 @@ export const personalInfo = {
 
 export const aboutContent = {
     paragraphs: [
-        "I'm an Electronics and Communication Engineering graduate with a strong foundation in embedded systems, IoT, and hardware-software integration. I've gravitated toward building functional web applications and software tools — with a deep interest in creating solutions that people can actually use.",
-        "I enjoy rapid prototyping and proof-of-concept development, approaching problems with a systems thinking mindset. Whether it's spinning up a web application or debugging a microcontroller, I value clarity, structured problem solving, and hands-on experimentation.",
-        "My background in electronics gives me a unique perspective on software — understanding both sides of the stack has made me comfortable working across domains and tackling challenges that bridge hardware and software.",
+        "As an Electrical & Communication Engineer, I am skilled in working with embedded systems, IoT, and software integration. I have been able to design real-time functional applications and prototyping that can be implemented effectively.",
+        "I tackle issues from a systemic perspective, always striving for quick prototyping and concept validation. From building a web app to coding a microcontroller, I appreciate the process of problem solving and practical implementation.",
+        "Having a history in electronics provides me with a different approach to software engineering. Being able to understand both ends of the equation allows me to operate freely in each domain and create hybrid solutions.",
     ],
     highlights: [
         "B.Tech ECE Graduate",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
         title: "AquaComply India",
         type: "Internship Project · Thoyam Ecocognitives",
         description:
-            "An AI-powered environmental compliance self-check tool designed for organizations to audit water and air quality parameters against official CPCB standards. Features AI document parsing of PDF lab reports using the Gemini API, smart validation against regional standards, and automated generation of corrective actions and compliance reports.",
+            "A system powered by AI that helps businesses conduct their own audits based on water and air quality metrics according to the standards set forth by CPCB. Capabilities include AI-based extraction from lab reports in PDF format using the Gemini API and intelligent matching with regional requirements.",
         focusAreas: ["React + Vite", "Gemini API", "PDF.js", "Tailwind CSS"],
         demoUrl: "https://asmithcodes.github.io/AquaComply-India/",
         isPrimary: true,
@@ -59,7 +59,7 @@ export const projects: Project[] = [
         title: "Lumina",
         type: "Functional Web Application",
         description:
-            "An AI-powered decision-analysis tool that uses the Google Gemini API to guide users through structured, psychologically challenging prompts. It automatically synthesizes responses to surface hidden assumptions and deliver actionable clarity on complex personal dilemmas.",
+            "The use of an AI-driven decision analysis program leveraging the power of the Google Gemini API in making psychological decisions by prompting users with tough decisions. This will automatically synthesize answers to reveal hidden assumptions for personal clarity.",
         focusAreas: [
             "User-focused design",
             "Practical problem solving",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
         title: "Acoustic Data Link",
         type: "Functional Web Application",
         description:
-            "A browser-based acoustic data link for air-gapped, peer-to-peer communication — no Wi-Fi, Bluetooth, or cellular required. Encodes text and files into 8-FSK audio signals using the Web Audio API, transmitted over a device's speaker and decoded by a nearby microphone. Features a custom FSK protocol with look-ahead scheduling, SNR-based handshake detection, CRC32 data integrity verification, and a distinctive vintage signal-intelligence UI.",
+            "An Internet browser-based audio data link for air-gap, peer-to-peer messaging without requiring Wi-Fi, Bluetooth, or cellular. Converts textual and file content to audio tones via the Web Audio API, sent over a device's speaker output and received by an adjacent microphone. Includes an 8-FSK modulation protocol with look-ahead scheduling, signal/noise ratio-based handshake negotiation, CRC32 data verification, and vintage signal intelligence graphics interface.",
         focusAreas: [
             "Web Audio API",
             "DSP / FSK modulation",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
         title: "AetherWay",
         type: "Travel Planning Application",
         description:
-            "An intelligent travel planning application that compares flights, trains, buses, and self-drive options in real time. The system aggregates live pricing, route optimization, and direct booking links using AI-powered search, presenting users with the most practical and efficient travel choices through a fast, dark-themed interface with saved searches and favorites.",
+            "A travel planner app that makes comparisons among flights, train services, bus services, and self-drive services in real-time. The software uses AI technology to aggregate the live prices, optimize routes, and offer direct booking links to users, who would then be provided with the best travel solutions available from the app's quick and dark-themed interface.",
         focusAreas: [
             "Full-stack development",
             "User experience",
@@ -111,7 +111,7 @@ export const projects: Project[] = [
         title: "QR A3 Batch Generator",
         type: "Proof-of-Concept Web Tool",
         description:
-            "A lightweight web application for generating QR codes in bulk and arranging them into print-ready A3 layouts. Users can paste or upload data, customize layout and spacing controls, and export high-resolution printable sheets. Built with a focus on usability, fast iteration, and real-world utility.",
+            "An easy to use web app for producing large batches of QR codes in an A3 template format for printing purposes. Allows the user to input any required data, change settings according to the layout needs and spacing requirements, and download print-ready sheets.",
         focusAreas: [
             "Web development",
             "JavaScript logic",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
         title: "AI Music Discovery",
         type: "Interactive Web Application",
         description:
-            "An AI-assisted music discovery application that generates personalized song recommendations based on user context such as mood, activity, and region. The system verifies each recommendation against Spotify in real time to eliminate non-existent or incorrect tracks, ensuring only valid, playable results and seamless playlist creation.",
+            "An interactive web application that generates song suggestions based on the user's mood, activity, and preferred region. The software verifies each song using the Spotify API to make sure that it is available, and then creates a playlist for the user.",
         focusAreas: [
             "JavaScript",
             "Frontend logic",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
         title: "Wireless Head Tracking System",
         type: "Embedded Systems Project",
         description:
-            "An ESP32-based wireless head tracking system featuring dual IMU sensor fusion (MPU6500 + MPU6050) for precise yaw and pitch tracking. Uses ESP-NOW protocol for low-latency communication (~100ms at 10Hz) between a wearable transmitter unit and servo-controlled receiver. Designed for VR/AR applications, camera gimbals, and interactive robotics with automatic gyroscope calibration, signal filtering, and real-time data validation.",
+            "Wireless head tracking system based on ESP32 with dual IMU sensors integration (MPU6500 & MPU6050) for accurate yaw & pitch tracking. Utilizes ESP-NOW wireless transmission protocol for fast communication (~100ms @ 10Hz) between wearable transmitter device and servo motor driven receiver. Applications include VR/AR systems, camera stabilizers and robots with gyroscope calibration and signal filtering capabilities.",
         focusAreas: [
             "ESP32 development",
             "Sensor fusion",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
         title: "IoT & Embedded Prototypes",
         type: "Internship Work · EduTech Innovations",
         description:
-            "Multiple IoT and embedded system prototypes created for educational and proof-of-concept purposes. Focused on rapid development, sensor integration, microcontroller programming, and wireless communication.",
+            "A number of prototypes of IoT and embedded systems were developed to validate concepts and ideas. Emphasis was placed on rapid prototyping, sensing, controlling the microcontroller, and wireless connectivity.",
         focusAreas: [
             "ESP32",
             "Sensor integration",
@@ -183,7 +183,7 @@ export const projects: Project[] = [
         title: "Verilog Programs",
         type: "Digital Design Fundamentals",
         description:
-            "A collection of Verilog programs showcasing foundational understanding of digital logic and hardware description concepts.",
+            "Complete set of Verilog implementations of digital logic circuits ranging from fundamental combinatorial circuits to intricate sequential circuits. Contains structural implementations of multibit ALUs, shifters, and Finite State Machines (FSMs) to simulate digital logic timing and control.",
         focusAreas: ["Verilog HDL", "Digital logic", "Hardware design"],
         githubUrl: "https://github.com/Asmithcodes/Verilog-Programs",
         isPrimary: false,
@@ -223,7 +223,7 @@ export const experiences = [
         location: "Hyderabad",
         duration: "6 months",
         description:
-            "Developed AquaComply India, an AI-powered environmental compliance self-check tool. Integrated Google Gemini API and PDF.js to parse PDF lab reports and validate water/air quality parameters against CPCB standards, generating automated compliance reports and actionable corrective actions.",
+            "Created AquaComply India - an AI-enabled environmental compliance self-audit system. Leveraged Google Gemini API and PDF.js library for parsing PDFs of lab reports and comparing water and air quality measurements with CPCB guidelines to prepare compliance reports.",
         highlights: [
             "React & TypeScript",
             "Gemini AI API",
@@ -238,7 +238,7 @@ export const experiences = [
         location: "Hyderabad",
         duration: "3 months",
         description:
-            "Developed a Python-based simulation to model and validate data-link establishment logic between two distributed systems. Focused on analyzing system behavior, state transitions, and reliability within a controlled simulation environment.",
+            "Built a Python program that simulates and verifies the logic used to establish a data link between two distributed systems. Emphasis was placed on analyzing the behavior of the systems and their states within an artificial experimental environment.",
         highlights: [
             "Python simulation",
             "System behavior modeling",
@@ -253,7 +253,7 @@ export const experiences = [
         location: "Hyderabad",
         duration: "2 months",
         description:
-            "Worked on rapid prototyping of IoT systems and embedded projects. Gained hands-on experience with sensor integration, microcontroller programming, and system-level experimentation.",
+            "Worked on rapid prototyping of IoT systems and embedded projects. Hands-on experience in interfacing sensors and programming microcontrollers.",
         highlights: [
             "Rapid prototyping",
             "ESP32 development",
@@ -268,7 +268,7 @@ export const experiences = [
         location: "Hyderabad",
         duration: "1 month",
         description:
-            "Gained exposure to electronics manufacturing processes, PCB design fundamentals, and industrial systems. Developed understanding of production-grade electronics development.",
+            "Received training in fundamental aspects of electronics production, basic PCB design, and industrial machinery. Developed a basic understanding of electronics as they are made for the market.",
         highlights: [
             "Electronics manufacturing",
             "PCB design",
