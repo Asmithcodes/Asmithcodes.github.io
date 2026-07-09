@@ -9,7 +9,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/asmithpampana/",
     github: "https://github.com/Asmithcodes",
     resumeUrl: "/Asmith - Resume.pdf", // Placeholder - replace with actual resume URL
-    photoUrl: "/AsmithPhoto.png", // Placeholder - replace with actual photo
+    photoUrl: "/mypic.PNG"
 };
 
 export const aboutContent = {
