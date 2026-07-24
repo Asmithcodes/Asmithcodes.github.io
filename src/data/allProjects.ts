@@ -12,6 +12,15 @@ export type ProjectItem = {
 
 export const allProjects: ProjectItem[] = [
     {
+        id: "assetdesk",
+        title: "AssetDesk - IT Asset & Service Ticket Management System",
+        description: "A full-stack MERN application designed to streamline internal IT asset tracking, hardware lifecycle management, and IT support operations. Built with a clean 4-layer backend architecture (Routes → Controllers → Services → Repositories), automated priority SLA engine with live countdowns, granular RBAC security, audit logging with change diffs, and PDF reporting with Recharts dashboards.",
+        focusAreas: ["MERN Stack", "React 19", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        githubUrl: "https://github.com/Asmithcodes/Ticket-Management-System",
+        demoUrl: "https://asset-desk.netlify.app/dashboard",
+        category: "software"
+    },
+    {
         id: "aquacomply-india",
         title: "AquaComply India",
         description: "A web application tailored for Indian water quality compliance standards. Helps users assess, track, and report water treatment compliance in line with Indian regulatory frameworks.",
